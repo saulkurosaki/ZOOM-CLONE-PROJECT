@@ -17,6 +17,11 @@ const MeetingTypeList = () => {
             height={27}
           />
         </div>
+
+        <div className="flex flex-col gap-2">
+          <h1 className="text-2xl font-bold">New Meeting</h1>
+          <p className="text-lg font-normal">Start an instant meeting</p>
+        </div>
       </div>
     </section>
   );
