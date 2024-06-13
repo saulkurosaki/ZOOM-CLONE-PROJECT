@@ -36,9 +36,9 @@ const MeetingTypeList = () => {
         className="bg-purple-1"
       />
       <HomeCard
-        image="/icons/add-meeting.svg"
-        title="New Meeting"
-        description="Start an instant meeting"
+        image="/icons/join-meeting.svg"
+        title="Join Meeting"
+        description="via invitation link"
         handleClick={() => setMeetingState("isJoiningMeeting")}
         className="bg-yellow-1"
       />
