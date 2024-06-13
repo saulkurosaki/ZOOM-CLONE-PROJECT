@@ -25,12 +25,7 @@ const HomeCard = ({
       onClick={handleClick}
     >
       <div className="flex-center glassmorphism size-12 rounded-[10px]">
-        <Image
-          src="/icons/add-meeting.svg"
-          alt="meeting icon"
-          width={27}
-          height={27}
-        />
+        <Image src={image} alt="meeting icon" width={27} height={27} />
       </div>
 
       <div className="flex flex-col gap-2">
