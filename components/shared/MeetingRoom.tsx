@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import {
   CallControls,
   CallParticipantsList,
+  CallStatsButton,
   PaginatedGridLayout,
   SpeakerLayout,
 } from "@stream-io/video-react-sdk";
@@ -79,6 +80,7 @@ const MeetingRoom = () => {
             <DropdownMenuSeparator className="border-dark-1" />
           </DropdownMenuContent>
         </DropdownMenu>
+        <CallStatsButton />
       </div>
     </section>
   );
