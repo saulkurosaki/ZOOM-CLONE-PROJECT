@@ -63,13 +63,20 @@ const MeetingRoom = () => {
               <LayoutList size={20} className="text-white" />
             </DropdownMenuTrigger>
           </div>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+          <DropdownMenuContent className="border-dark-1 bg-dark-1 text-white">
+            {["Grid", "Speaker-Left", "Speaker-Right"].map((item, index) => (
+              <div key={index}>
+                <DropdownMenuItem
+                  className="cursor-pointer"
+                  onClick={() =>
+                    setLayout(item.toLowerCase() as CallLayoutType)
+                  }
+                >
+                  {item}
+                </DropdownMenuItem>
+              </div>
+            ))}
+            <DropdownMenuSeparator className="border-dark-1" />
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
