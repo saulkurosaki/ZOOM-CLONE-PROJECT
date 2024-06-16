@@ -1,9 +1,10 @@
 "use client";
 
 import { useGetCalls } from "@/hooks/useGetCalls";
-import { CallRecording } from "@stream-io/video-react-sdk";
+import { Call, CallRecording } from "@stream-io/video-react-sdk";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import MeetingCard from "./MeetingCard";
 
 const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
   const { endedCalls, upcomingCalls, callRecordings, isLoading } =
@@ -37,7 +38,18 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
     }
   };
 
-  return <div>CallList</div>;
+  const calls = getCalls();
+  const noCallsMessage = getNoCallsMessage();
+
+  return (
+    <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
+      {calls && calls.length > 0 ? (
+        calls.map((meeting: Call | CallRecording) => <MeetingCard />)
+      ) : (
+        <h1>{noCallsMessage}</h1>
+      )}
+    </div>
+  );
 };
 
 export default CallList;
