@@ -24,6 +24,19 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
     }
   };
 
+  const getNoCallsMessage = () => {
+    switch (type) {
+      case "ended":
+        return "No Previous Calls";
+      case "recordings":
+        return "No Recordings";
+      case "upcoming":
+        return "No Upcoming Calls";
+      default:
+        return "";
+    }
+  };
+
   return <div>CallList</div>;
 };
 
