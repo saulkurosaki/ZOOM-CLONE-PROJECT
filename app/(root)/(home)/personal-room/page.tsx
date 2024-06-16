@@ -23,6 +23,8 @@ const PersonalRoom = () => {
   const { user } = useUser();
   const meetingId = user?.id;
 
+  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meetingId}?personal=true`;
+
   return (
     <section className="flex size-full flex-col gap-10 text-white">
       <h1 className="text-3xl font-bold">Personal Room</h1>
@@ -30,6 +32,7 @@ const PersonalRoom = () => {
       <div className="flex w-full flex-col gap-8 xl:max-w-[900px]">
         <Table title="Topic" description={`${user?.username}'s meeting room`} />
         <Table title="Meeting ID" description={meetingId!} />
+        <Table title="Invite Link" description={meetingLink} />
       </div>
     </section>
   );
