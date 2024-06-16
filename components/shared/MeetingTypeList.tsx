@@ -109,21 +109,21 @@ const MeetingTypeList = () => {
           handleClick={createMeeting}
         />
       ) : (
-        // <MeetingModal
-        //   isOpen={meetingState === "isScheduleMeeting"}
-        //   onClose={() => setMeetingState(undefined)}
-        //   title="Meeting Created"
-        //   className="text-center"
-        //   handleClick={() => {
-        //     // navigator.clipboard.writeText(meetingLink);
-        //     // toast({
-        //     //   title: "Link copied"
-        //     // });
-        //   }}
-        //   image="/icons/checked.svg"
-        //   buttonIcon="/icons/copy.svg"
-        //   buttonText="Copy meeting link"
-        // />
+        <MeetingModal
+          isOpen={meetingState === "isScheduleMeeting"}
+          onClose={() => setMeetingState(undefined)}
+          title="Meeting Created"
+          className="text-center"
+          handleClick={() => {
+            // navigator.clipboard.writeText(meetingLink);
+            // toast({
+            //   title: "Link copied"
+            // });
+          }}
+          image="/icons/checked.svg"
+          buttonIcon="/icons/copy.svg"
+          buttonText="Copy meeting link"
+        />
       )}
 
       <MeetingModal
