@@ -1,37 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ZOOM CLONE PROJECT
 
-## Getting Started
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-First, run the development server:
+- Next.js
+- TypeScript
+- Clerk
+- getstream
+- shadcn
+- Tailwind CSS
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## <a name="features">🔋 Features</a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 **Authentication**: Implements authentication and authorization features using Clerk, allowing users to securely log in via social sign-on or traditional email and password methods, while ensuring appropriate access levels and permissions within the platform.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👉 **New Meeting**: Quickly start a new meeting, configuring camera and microphone settings before joining.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+👉 **Meeting Controls**: Participants have full control over meeting aspects, including recording, emoji reactions, screen sharing, muting/unmuting, sound adjustments, grid layout, participant list view, and individual participant management (pinning, muting, unmuting, blocking, allowing video share).
 
-## Learn More
+👉 **Exit Meeting**: Participants can leave a meeting, or creators can end it for all attendees.
 
-To learn more about Next.js, take a look at the following resources:
+👉 **Schedule Future Meetings**: Input meeting details (date, time) to schedule future meetings, accessible on the 'Upcoming Meetings' page for sharing the link or immediate start.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👉 **Past Meetings List**: Access a list of previously held meetings, including details and metadata.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+👉 **View Recorded Meetings**: Access recordings of past meetings for review or reference.
 
-## Deploy on Vercel
+👉 **Personal Room**: Users have a personal room with a unique meeting link for instant meetings, shareable with others.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉 **Join Meetings via Link**: Easily join meetings created by others by providing a link.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-ZOOM CLONE PROJECT
+👉 **Secure Real-time Functionality**: All interactions within the platform are secure and occur in real-time, maintaining user privacy and data integrity.
+
+👉 **Responsive Design**: Follows responsive design principles to ensure optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
+
+and many more, including code architecture and reusability.
+
+![alt text](1-Xnip2024-06-17_13-15-46.jpg)
+![alt text](2-Xnip2024-06-17_13-17-07.jpg)
+![alt text](3-Xnip2024-06-17_13-17-30.jpg)
+![alt text](4-Xnip2024-06-17_13-20-49.jpg)
+![alt text](5-Xnip2024-06-17_13-21-02.jpg)
+![alt text](6-Xnip2024-06-17_13-23-04.jpg)
+![alt text](7-Xnip2024-06-17_13-23-18.jpg)
+![alt text](8-Xnip2024-06-17_13-23-32.jpg)
+![alt text](9-Xnip2024-06-17_13-24-18.jpg)
+![alt text](10-Xnip2024-06-17_13-24-37.jpg)
+![alt text](11-Xnip2024-06-17_13-26-17.jpg)
+![alt text](12-Xnip2024-06-17_13-27-01.jpg)
+![alt text](13-Xnip2024-06-17_13-30-10.jpg)
+![alt text](14-Xnip2024-06-17_13-31-50.jpg)
+![alt text](15-Xnip2024-06-17_13-32-21.jpg)
+![alt text](16-Xnip2024-06-17_13-32-44.jpg)
+![alt text](17-Xnip2024-06-17_13-33-45.jpg)
+![alt text](18-Xnip2024-06-17_13-34-10.jpg)
