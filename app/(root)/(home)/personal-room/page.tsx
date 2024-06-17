@@ -45,7 +45,7 @@ const PersonalRoom = () => {
         <Button className="bg-blue-1" onClick={startRoom}>
           Start Meeting
         </Button>
-        {/* <Button
+        <Button
           className="bg-dark-3"
           onClick={() => {
             navigator.clipboard.writeText(meetingLink);
@@ -55,7 +55,7 @@ const PersonalRoom = () => {
           }}
         >
           Copy Invitation
-        </Button> */}
+        </Button>
       </div>
     </section>
   );
